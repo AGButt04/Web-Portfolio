@@ -51,14 +51,14 @@
             </div>
             
             <div id="play-game">
-                <button onclick="">Play game???</button>
+                <button onclick="playGame()">Play game???</button>
             </div>
             
             <div style="display: none;" class="color-div">
                 <h4>Pick a color</h4>
                 <p style="display: none;">Great... now it's ruined</p>
-                <input type="color" id="color-picker" onchange="" value="#0084ff" />
-                <button style="display: none;" onclick=""> Reset </button>
+                <input type="color" id="color-picker" onchange="changeColor()" value="#0084ff" />
+                <button style="display: none;" onclick="resetColor()"> Reset </button>
             </div>
         </section>
         
@@ -173,7 +173,7 @@
                         <img class="big-img" src="./public/fantacss.png" alt="project=thumbnail" />
                     </div>
                 </div>
-                
+
             </div>
         </section>
     </main>
@@ -184,7 +184,46 @@
         </p>
     </footer>
     <script>
-        
+        // This is where we create the interactivity for out little color switching game.
+
+        // 1. Select all the html elements to so that we can later manipulate them.
+        const body = document.querySelector("body");
+        const colorInput = document.getElementById("color-picker");
+        const colorDiv = document.querySelector(".color-div");
+        const hiddenText = document.querySelector(".color-div p");
+        const resetBtn = document.querySelector(".color-div button");
+        const playBtn = document.getElementById("play.game");
+
+        // 2. Create the functions
+        function playGame() {
+            // This function enables the play of the game by showing the color selector.
+            colorDiv.style.display = "block";
+            playBtn.style.display = "none";
+
+        }
+
+        function changeColor() {
+            // Take the user's selected color and set it to the background of the website.
+            const selectedColor = colorInput.value;
+            body.style.background = selectedColor;
+            resetBtn.style.display = "block";
+            hiddenText.style.display = "block";
+            colorInput.style.display = "none";
+            colorDiv.style.display = "none";
+        }
+
+        function resetColor() {
+            colorInput.style.display = "block";
+            body.style.background = "white";
+
+            resetBtn.style.display = "none";
+            hiddenText.style.display = "none";
+            colorDiv.style.display = "none";
+        }
+
+        // 3. Assign functions to the buttons by adding the function calls to actual elements.
+
+
     </script>
 </body>
 </html>
