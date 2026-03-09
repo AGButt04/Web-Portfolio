@@ -201,15 +201,6 @@
             playBtn.style.display = "none";
 
         }
-
-        function resetColor() {
-            colorInput.style.display = "block";
-            body.style.background = "white";
-
-            resetBtn.style.display = "none";
-            hiddenText.style.display = "none";
-            colorDiv.style.display = "none";
-        }
         
         function changeColor() {
             // Take the user's selected color and set it to the background of the website.
@@ -218,6 +209,16 @@
             resetBtn.style.display = "block";
             hiddenText.style.display = "block";
             colorInput.style.display = "none";
+            colorDiv.style.display = "none";
+        }
+
+        function resetColor() {
+            colorInput.style.display = "block";
+            playBtn.style.display = "block";
+            body.style.background = "white";
+
+            resetBtn.style.display = "none";
+            hiddenText.style.display = "none";
             colorDiv.style.display = "none";
         }
 
