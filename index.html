@@ -187,19 +187,18 @@
         // This is where we create the interactivity for out little color switching game.
 
         // 1. Select all the html elements to so that we can later manipulate them.
-        const body = document.querySelector("body");
-        const colorInput = document.getElementById("color-picker");
-        const colorDiv = document.querySelector(".color-div");
-        const hiddenText = document.querySelector(".color-div p");
-        const resetBtn = document.querySelector(".color-div button");
-        const playBtn = document.getElementById("play.game");
+        const body = document.querySelector('body');
+        const colorInput = document.getElementById('color-picker');
+        const colorDiv = document.querySelector('.color-div');
+        const hiddenText = document.querySelector('.color-div p');
+        const resetBtn = document.querySelector('.color-div button');
+        const playBtn = document.getElementById('play-game');
 
         // 2. Create the functions
         function playGame() {
             // This function enables the play of the game by showing the color selector.
             colorDiv.style.display = "block";
             playBtn.style.display = "none";
-
         }
         
         function changeColor() {
@@ -209,7 +208,6 @@
             resetBtn.style.display = "block";
             hiddenText.style.display = "block";
             colorInput.style.display = "none";
-            colorDiv.style.display = "none";
         }
 
         function resetColor() {
