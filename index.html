@@ -18,6 +18,7 @@
             <a target="_blank" href="https://www.linkedin.com/in/abdul-ghani-butt-290056338/">
                 <i class="fa-brands fa-square-linkedin"></i>
             </a>
+            <button onclick="toggleCSS()" id="css-toggle-btn">⚡ Claude's Styling</button>
         </nav>
     </header>
     <main>
@@ -241,6 +242,15 @@
         const hiddenText = document.querySelector('.color-div p');
         const resetBtn = document.querySelector('.color-div button');
         const playBtn = document.getElementById('play-game');
+        const cssLink = document.querySelector('link[href="./styles.css"]');
+        const toggleBtn = document.getElementById('css-toggle-btn');
+        let usingClaude = false;
+
+        function toggleCSS() {
+            usingClaude = !usingClaude;
+            cssLink.href = usingClaude ? './styles-claude.css' : './styles.css';
+            toggleBtn.textContent = usingClaude ? "👤 My CSS" : "⚡ Claude's CSS";
+        }
 
         // 2. Create the functions
         function playGame() {
