@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <a href="/">Abdul G Butt</a>
+        <a id="my_name" href="/">Abdul G Butt</a>
         <nav>
             <a target="_blank"  href="https://github.com/AGButt04">
                 <i class="fa-brands fa-github"></i>
@@ -244,12 +244,14 @@
         const playBtn = document.getElementById('play-game');
         const cssLink = document.querySelector('link[href="./styles.css"]');
         const toggleBtn = document.getElementById('css-toggle-btn');
+        const myname = document.getElementById("my_name");
         let usingClaude = false;
 
         function toggleCSS() {
             usingClaude = !usingClaude;
             cssLink.href = usingClaude ? './styles-claude.css' : './styles.css';
             toggleBtn.textContent = usingClaude ? "👤 My CSS" : "⚡ Claude's CSS";
+            myname.style.color = usingClaude? "darkred" : "blue";
         }
 
         // 2. Create the functions
