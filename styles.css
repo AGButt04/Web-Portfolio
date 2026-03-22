@@ -13,6 +13,29 @@ body {
     margin-bottom: 10px;
 }
 
+.cert-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+}
+
+.cert-item {
+    padding: 10px;
+    border-radius: 8px;
+    background: #f5f5f5;
+}
+
+.cert-item h4 {
+    margin: 0;
+}
+
+.cert-item p {
+    margin: 2px 0 0;
+    font-size: 0.9rem;
+    color: gray;
+}
+
 header,
 main,
 footer {
