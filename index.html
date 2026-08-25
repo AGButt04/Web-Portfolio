@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abdul Ghani Web Portfolio</title>
-    <link rel="stylesheet" href="./styles.css"/>
     <link rel="stylesheet" href="./fanta.css"/>
+    <link rel="stylesheet" href="./styles.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -19,7 +19,7 @@
                 <i class="fa-brands fa-square-linkedin"></i>
             </a>
             <button onclick="toggleCSS()" id="css-toggle-btn">⚡ Claude's Styling</button>
-        </nav>`
+        </nav>
     </header>
     <main>
 
@@ -172,33 +172,6 @@
             <div class="card-grid">
                 <div class="project-card">
                     <div>
-                        <h4>The Brogram</h4>
-                        <p>January 10, 2026</p>
-                        <div class="tech-list">
-                            <div class="card-button-secondary">
-                                <p>• ReactJS</p>
-                            </div>
-                            <div class="card-button-secondary">
-                                <p>• FantaCSS</p>
-                            </div>
-                            <div class="card-button-secondary">
-                                <p>• JavaScript</p>
-                            </div>
-                        </div>
-                        <p>This Simple 30 Workouts Training Plan.</p>
-                        <div class="project-links">
-                            <a target="_blank" href="https://brogram-workouts-agbutt.netlify.app/">Live</a>
-                            <a target="_blank" href="https://github.com/AGButt04/The-Brogram">GitHub</a>
-                        </div>
-                    </div>
-                    <div class="img-div">
-                        <img class="big-img" src="./public/brogram.png" alt="project=thumbnail" />
-                    </div>
-                </div>
-                <br />
-
-                <div class="project-card">
-                    <div>
                         <h4>Expenny · The Subscription Tracker</h4>
                         <p>March 16, 2026</p>
                         <div class="tech-list">
@@ -220,6 +193,33 @@
                     </div>
                     <div class="img-div">
                         <img class="big-img" src="./public/expenny.png" alt="project=thumbnail" />
+                    </div>
+                </div>
+                <br />
+
+                <div class="project-card">
+                    <div>
+                        <h4>The Brogram</h4>
+                        <p>January 10, 2026</p>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>• ReactJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>• FantaCSS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>• JavaScript</p>
+                            </div>
+                        </div>
+                        <p>This Simple 30 Workouts Training Plan.</p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://brogram-workouts-agbutt.netlify.app/">Live</a>
+                            <a target="_blank" href="https://github.com/AGButt04/The-Brogram">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="./public/brogram.png" alt="project=thumbnail" />
                     </div>
                 </div>
                 <br />
@@ -302,7 +302,7 @@
         function resetColor() {
             colorInput.style.display = "block";
             playBtn.style.display = "block";
-            body.style.background = "white";
+            body.style.background = "";
 
             resetBtn.style.display = "none";
             hiddenText.style.display = "none";
